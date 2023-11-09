@@ -1,0 +1,52 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Nunito', sans-serif;
+    background-image: url(Polygon2.png);
+    background-size: 54.84375% 103.14814814814814%;
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+    color: #4f4f4f; 
+}
+
+h1 {
+    font-size: 47.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.logo_vino {
+    margin-top: 36px;
+    margin-left: 1049px;
+    width: 152px;
+}
+
+.row {
+    display: flex;
+    margin-top: 35px;
+}
+
+.row_vino {
+    padding-left: 61px;
+    padding-right: 79px;
+}
+
+.bintang_vino {
+    width: 46px;
+    margin-right: 20px;
+}
+
+h2 {
+    display: inline;
+    font-size: 32px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    font-size: 32px;
+    margin-left: 70px;
+    font-weight: 400;
+}
+
+
