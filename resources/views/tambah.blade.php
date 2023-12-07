@@ -1,28 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('master2')
+@section('judulhalaman', 'Tambah Pegawai')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+@section('konten')
 
-	<a href="/pegawai"> Kembali</a>
+    <br/>
+	<h3>Tambah Pegawai</h3>
+
+	<a href="/pegawai" class="btn btn-primary"> Kembali</a>
 
 	<br/>
 	<br/>
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}
-		Nama <input type="text" name="nama"> <br/>
-		Jabatan <input type="text" name="jabatan"> <br/>
-		Umur <input type="number" name="umur"> <br/>
-		Alamat <textarea name="alamat"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
+		<div class="form-group row">
+            <label for="inputnama" class="col-sm-2 col-form-label">Nama</label>
+            <div class="col-sm-10">
+                <input type="text" name="nama" class="form-control" id="inputnama">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputjabatan" class="col-sm-2 col-form-label">Jabatan</label>
+            <div class="col-sm-10">
+                <input type="text" name="jabatan" class="form-control" id="inputjabatan">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputumur" class="col-sm-2 col-form-label">Umur</label>
+            <div class="col-sm-10">
+                <input type="number" name="umur" class="form-control" id="inputumur">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputalamat" class="col-sm-2 col-form-label">Alamat</label>
+            <div class="col-sm-10">
+                <textarea name="alamat" class="form-control" id="inputalamat">Masukkan Alamat Anda</textarea>
+            </div>
+        </div>
+		<input type="submit" value="Simpan Data" class="btn btn-info">
 	</form>
 
-
-
-</body>
-</html>
+@endsection
