@@ -83,3 +83,20 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+
+//nilaikuliah
+
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
+
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
+
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+//keranjangbelanja
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@index');
+
+Route::get('/keranjangbelanja/tambah','App\Http\Controllers\KeranjangController@tambah');
+
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
+
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
