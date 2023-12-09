@@ -67,7 +67,7 @@ Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
 
 Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
 
-//route CRUD
+//pegawai
 Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
 
 Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
@@ -85,7 +85,6 @@ Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 //nilaikuliah
-
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
 
 Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
@@ -100,3 +99,20 @@ Route::get('/keranjangbelanja/tambah','App\Http\Controllers\KeranjangController@
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
 
 Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
+
+//lampu
+Route::get('/lampu','App\Http\Controllers\LampuController@index');
+
+Route::get('/lampu/tambah','App\Http\Controllers\LampuController@tambah');
+
+Route::post('/lampu/store','App\Http\Controllers\LampuController@store');
+
+Route::get('/lampu/edit/{id}','App\Http\Controllers\LampuController@edit');
+
+Route::post('/lampu/update','App\Http\Controllers\LampuController@update');
+
+Route::get('/lampu/hapus/{id}','App\Http\Controllers\LampuController@hapus');
+
+Route::get('/lampu/cari','App\Http\Controllers\LampuController@cari');
+
+Route::get('/lampu/view/{id}','App\Http\Controllers\LampuController@view');
