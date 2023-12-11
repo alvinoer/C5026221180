@@ -116,3 +116,8 @@ Route::get('/lampu/hapus/{id}','App\Http\Controllers\LampuController@hapus');
 Route::get('/lampu/cari','App\Http\Controllers\LampuController@cari');
 
 Route::get('/lampu/view/{id}','App\Http\Controllers\LampuController@view');
+
+//kategori
+Route::get('/kategori','App\Http\Controllers\KategoriController@index');
+
+Route::get('/kategori/cari','App\Http\Controllers\KategoriController@cari');
